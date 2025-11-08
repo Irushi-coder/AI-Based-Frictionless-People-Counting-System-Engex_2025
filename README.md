@@ -171,10 +171,7 @@ tracking:
 
 ```bash
 # Start the tracking system
-python main.py
-
-# Launch web dashboard (in separate terminal)
-python dashboard.py
+python webinterface.py
 ```
 
 ### Access the Dashboard
@@ -208,44 +205,6 @@ http://<jetson-ip-address>:5000
 - Worker flow tracking
 - Zone monitoring for safety compliance
 - Production area access control
-
-## 📁 Project Structure
-
-```
-AI-Based-Frictionless-People-Counting-System-Engex_2025/
-├── main.py                      # Main application entry
-├── dashboard.py                 # Web dashboard server
-├── config.yaml                  # Configuration file
-├── requirements.txt             # Python dependencies
-├── README.md                    # Documentation
-│
-├── models/
-│   └── yolov8n-face.pt         # Face detection model
-│
-├── src/
-│   ├── detector.py             # YOLOv8 face detection
-│   ├── tracker.py              # Centroid tracking logic
-│   ├── counter.py              # Zone counting algorithm
-│   ├── stream_handler.py       # GStreamer RTSP handling
-│   └── utils.py                # Utility functions
-│
-├── dashboard/
-│   ├── app.py                  # Flask/FastAPI app
-│   ├── templates/
-│   │   └── index.html          # Dashboard UI
-│   └── static/
-│       ├── css/
-│       ├── js/
-│       └── images/
-│
-├── data/
-│   ├── logs/                   # System logs
-│   └── counts.db               # Count database
-│
-└── scripts/
-    ├── download_yolov8_model.py
-    └── test_camera_connection.py
-```
 
 ## ⚙️ Performance Metrics
 
